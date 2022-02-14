@@ -1,2 +1,3 @@
 # FaceMaskDetection
-![Screenshot (100)](https://user-images.githubusercontent.com/57305406/153955437-d95cd520-6152-49b6-b444-5f23274f93e8.png)
+![SystemDescription](https://user-images.githubusercontent.com/57305406/153955774-df8211e6-5bb5-42a7-831b-6337ab859492.png)
+
