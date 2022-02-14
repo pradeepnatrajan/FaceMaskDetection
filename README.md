@@ -24,4 +24,11 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 ```
+### Step 2: Intialize learning rate and no. of epochs  for the model
+```
+INIT_LR= 1e-3 
+EPOCHS = 20 
+BS = 32
+```
+
 
