@@ -193,4 +193,4 @@ while True:
 cv2.destroyAllWindows()
 vs.stream.release()
 ```
-Note:- I have provided deploy.prototxt and caffemodel for convenience.
+Note:- I have provided deploy.prototxt and caffemodel files for convenience.
