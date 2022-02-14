@@ -107,5 +107,20 @@ print(classification_report(testY.argmax(axis=1), predIdxs,
 print("[Saving the optimized mask detector model...")
 model.save("mask_detector.model", save_format="h5")
 ```
+### Step 9: Plot the graph
+```
+N = EPOCHS
+plt.style.use("ggplot")
+plt.figure()
+plt.plot(np.arange(0, N), H.history["loss"], label="train_loss")
+plt.plot(np.arange(0, N), H.history["val_loss"], label="val_loss")
+plt.plot(np.arange(0, N), H.history["accuracy"], label="train_acc")
+plt.plot(np.arange(0, N), H.history["val_accuracy"], label="val_acc")
+plt.title("Training Loss and Accuracy")
+plt.xlabel("Epoch")
+plt.ylabel("Loss/Accuracy")
+plt.legend(loc="lower left")
+plt.savefig("plot.png")
+```
 
 
