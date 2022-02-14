@@ -75,7 +75,7 @@ aug = ImageDataGenerator(
 baseModel = MobileNetV2(weights="imagenet", include_top=False,input_tensor=Input(shape=(224, 224,3)))
 ```
 
-### Step 7:Addition of Maximum  pooling layer of pool size equal to 7× 7, a flattering layer, a dense ReLU layer which contains  128 neurons, a dropout of 0.5 and a decisive layer with softmax activation 
+### Step 7: Addition of Maximum  pooling layer of pool size equal to 7× 7, a flattering layer, a dense ReLU layer which contains  128 neurons, a dropout of 0.5 and a decisive layer with softmax activation 
 ```
 headModel = baseModel.output
 headModel = AveragePooling2D(pool_size=(7, 7))(headModel)
@@ -84,7 +84,7 @@ headModel = Dense(128, activation="relu")(headModel)
 headModel = Dropout(0.5)(headModel)
 headModel = Dense(2, activation="softmax")(headModel)
 ```
-### Step 8:Start training of model
+### Step 8: Start training of model
 ```
 model = Model(inputs=baseModel.input, outputs=headModel)
 for layer in baseModel.layers:
