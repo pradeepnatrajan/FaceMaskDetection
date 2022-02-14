@@ -107,7 +107,7 @@ print(classification_report(testY.argmax(axis=1), predIdxs,
 print("[Saving the optimized mask detector model...")
 model.save("mask_detector.model", save_format="h5")
 ```
-### Step 9: Plot the graph
+### Step 9: Plot and save the graph
 ```
 N = EPOCHS
 plt.style.use("ggplot")
