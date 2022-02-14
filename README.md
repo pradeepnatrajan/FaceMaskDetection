@@ -30,5 +30,11 @@ INIT_LR= 1e-3
 EPOCHS = 20 
 BS = 32
 ```
+### Step 3: Provide the directory of datasets
+```
+DIRECTORY = r"C:\Users\IAmPradeep\Downloads\dataset"
+CATEGORIES = ["with_mask", "without_mask"]
+```
+
 
 
